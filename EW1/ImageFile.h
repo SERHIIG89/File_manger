@@ -6,7 +6,7 @@
 class ImageFile : public FileType {
 public:
     ImageFile() : FileType(),
-        _name("new image"), _width(0.0), _height(0.0), file_size(8.0), _extension(".jpeg") {
+        _name(" Image"), _width(0.0), _height(0.0), file_size(8.0), _extension(".jpeg") {
         _name += _extension;
     }
     ImageFile(const std::string& _name) : _name(_name + ".xlsx"), _width(1024), _height(860) {

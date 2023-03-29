@@ -6,7 +6,7 @@
 
 class TableFIle : public FileType {
 public:
-    TableFIle() : FileType(), _name("new table"), _row(0), _column(0), file_size(0.0), _extension(".xlsx") {
+    TableFIle() : FileType(), _name(" Table"), _row(0), _column(0), file_size(0.0), _extension(".xlsx") {
         _name += _extension;
     }
     TableFIle(const std::string& _name) : _name(_name + ".xlsx"), _row(6), _column(8) {

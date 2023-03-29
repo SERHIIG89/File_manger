@@ -17,13 +17,13 @@ int main() {
     while (file_manager.m_isRunning) {
         std::cout << u8"\n>>> Введіть команду:";
         std::getline(std::cin, command);
-        if (command == "cd -imfile") {
+        if (command == "cd..imf") {
             file_manager.display_image();
         }
-        else if (command == "cd -textfile") {
+        else if (command == "cd..txtf") {
             file_manager.display_text();
         }
-        else if (command == "cd -tablefile") {
+        else if (command == "cd..tabf") {
             file_manager.display_table();
         }
         

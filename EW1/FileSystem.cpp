@@ -266,7 +266,7 @@ FolderNode& FileSystem::find_folder(std::string& _name) {
 }
 
 void FileSystem::remove_folder(std::string& _name) {
-    auto result = m_disk.find(this->getMCurrentDirectory() + '\\' + _name);
+    auto result = m_disk.find(this->getMCurrentDirectory() + _name);
     if (result != m_disk.end()) {
         m_disk.erase(result);
         std::cout << u8"\n- Папка " << _name << u8" була видалена.\n";
@@ -278,7 +278,7 @@ void FileSystem::remove_folder(std::string& _name) {
 
 void FileSystem::remove_file(std::string& _name)
 {
-    auto result = m_disk.find(this->getMCurrentDirectory() + '\\' + _name);
+    auto result = m_disk.find(this->getMCurrentDirectory() + _name);
     if (result != m_disk.end()) {
         m_disk.erase(result);
         std::cout << u8"\n- Файл " << _name << u8" був видалений.\n";

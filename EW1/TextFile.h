@@ -5,7 +5,7 @@
 
 class TextFile : public FileType {
 public:
-    TextFile() : FileType(), _name("new text"), char_count(0), file_size(0.0), _extension(".txt") {
+    TextFile() : FileType(), _name(" Text"), char_count(0), file_size(0.0), _extension(".txt") {
         _name += _extension;
     }
     TextFile(const std::string& _name) : _name(_name + ".txt"), char_count(58) {
